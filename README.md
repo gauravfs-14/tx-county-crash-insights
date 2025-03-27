@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Texas County Crash Insights
+
+Texas County Crash Insights is a data visualization tool that allows users to explore, analyze, and compare traffic crash data across all Texas counties. The dashboard provides multiple ways to interact with the data including maps, charts, and tables, making it easy to identify trends and patterns in crash occurrences and severities.
+
+## Features
+
+- **Interactive County Map**: Visualize crash density across Texas counties with color-coded indicators
+- **Comprehensive Filtering**: Filter data by county, year, and crash severity
+- **Key Statistics**: View summary statistics including total crashes, fatal crashes, injury crashes, and affected counties
+- **Multiple Visualizations**:
+  - Yearly trend analysis
+  - Crash severity distribution
+  - County comparison charts
+- **Data Table**: Explore the raw data with sorting and searching capabilities
+- **Export Functionality**: Export filtered data to CSV for further analysis
+
+## Technologies Used
+
+- **Framework**: Next.js 15.x with React 19
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Mapping**: Leaflet with React-Leaflet
+- **UI Components**: Shadcn UI
+- **Data Visualization**: Custom chart components
+- **Icons**: Lucide React
 
 ## Getting Started
 
@@ -18,19 +42,32 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js 18.x or later
+- npm or yarn package manager
 
-To learn more about Next.js, take a look at the following resources:
+## Usage Guide
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Filtering Data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Use the filter panel to select specific counties, years, or crash severity levels
+- All visualizations and statistics will update automatically based on your selections
 
-## Deploy on Vercel
+### Exploring the Map
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Hover over counties to see detailed crash information
+- Use the map legend to understand crash density representations
+- Zoom in/out for a closer look at specific regions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Analyzing Charts
+
+- **Yearly Trends**: Track crash patterns over time (2017-2024)
+- **Severity Distribution**: Compare different crash severity levels
+- **County Comparison**: Compare crash counts across different counties
+
+### Working with Data Table
+
+- Sort any column by clicking on the column header
+- Use the search box to find specific records
+- Export filtered data to CSV using the export button
